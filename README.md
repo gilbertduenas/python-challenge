@@ -12,7 +12,7 @@ The greatest decrease in losses (date and amount) over the entire period.
 
 ## Results
 
--The code should display a table similar to the one below.
+The code should display a table similar to the one below.
 
   Financial Analysis
 
