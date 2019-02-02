@@ -1,4 +1,4 @@
-## Objectives
+# Objectives
 
 The total number of months included in the dataset.
 
@@ -10,7 +10,7 @@ The greatest increase in profits (date and amount) over the entire period.
 
 The greatest decrease in losses (date and amount) over the entire period.
 
-## Results
+# Results
 
 The code should display a table similar to the one below.
 
