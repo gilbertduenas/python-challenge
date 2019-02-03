@@ -22,6 +22,8 @@ The code should display a table similar to the one below.
 
   Total Votes: 3521001
 
+  ----------------------------
+  
   Khan: 63.000% (2218231)
 
   Correy: 20.000% (704200)
@@ -30,4 +32,8 @@ The code should display a table similar to the one below.
 
   O'Tooley: 3.000% (105630)
 
+  ----------------------------
+  
   Winner: Khan
+
+  ----------------------------
