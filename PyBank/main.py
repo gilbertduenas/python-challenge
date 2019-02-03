@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
 # import modules
 import os
 import csv
@@ -30,21 +27,13 @@ del profit_loss[0]
 # convert to int
 profit_loss = list(map(int, profit_loss))
 
-#header
-print(
-    '''
-Financial Analysis
-----------------------------''')
-
 #The total number of months included in the dataset
 #use len
 date_len = len(date)
-print("Total months: " + str(date_len))
 
 #The net total amount of "Profit/Losses" over the entire period
 #use sum
 profit_loss_sum = sum(profit_loss)
-print("Total: $" + str(profit_loss_sum))
 
 #The average of the changes in "Profit/Losses" over the entire period
 # declare a list to store change values
@@ -59,12 +48,27 @@ for i in range(1, len(profit_loss)):
     
 #calculate the average and format to two decimal places
 profit_loss_average = round(sum(average_change) / len(average_change), 2)
-print("Average Change:" + str(profit_loss_average))
 
 #The greatest increase in profits (date and amount) over the entire period
 date_increase_index = (average_change.index(max(average_change)))
-print("Greatest Increase in Profits: " + date[date_increase_index + 1] + " ($" + str(max(average_change)) + ')')
 
 #The greatest decrease in losses (date and amount) over the entire period
 date_decrease_index = (average_change.index(min(average_change)))
-print("Greatest Decrease in Profits: " + date[date_decrease_index + 1] + " ($" + str(min(average_change)) + ')')
+
+# print to the console and to results.txt
+print(f'''Financial Analysis
+----------------------------
+Total months: {date_len}
+Total: ${profit_loss_sum}
+Average Change: ${str(profit_loss_average)}
+Greatest Increase in Profits: {date[date_increase_index + 1]} (${max(average_change)})
+Greatest Decrease in Profits: {date[date_decrease_index + 1]} (${min(average_change)})''')
+
+with open("results.txt", "w") as text:
+    print(f'''Financial Analysis
+----------------------------
+Total months: {date_len}
+Total: ${profit_loss_sum}
+Average Change: ${str(profit_loss_average)}
+Greatest Increase in Profits: {date[date_increase_index + 1]} (${max(average_change)})
+Greatest Decrease in Profits: {date[date_decrease_index + 1]} (${min(average_change)})''', file = text)
