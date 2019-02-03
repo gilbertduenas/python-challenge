@@ -10,6 +10,8 @@ The total number of votes each candidate won.
 
 The winner of the election based on popular vote.
 
+Download the CSV from https://drive.google.com/open?id=1-9n_Ozz3m7b-piEBYkr1G-0Yx9q_NWIx
+
 # Results
 
 The code should display a table similar to the one below.
