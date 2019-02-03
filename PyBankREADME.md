@@ -16,7 +16,7 @@ The code should display a table similar to the one below.
 
   ----------------------------
 
-#  Election Results
+  Election Results
 
   ----------------------------
 
