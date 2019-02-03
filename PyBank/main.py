@@ -17,9 +17,6 @@ with open(output, newline = "", encoding="utf8") as file:
         date.append(row[0])
         profit_loss.append(row[1])
 
-# zip lists
-budget = list(zip(date, profit_loss))
-
 # remove the headers
 del date[0]
 del profit_loss[0]
